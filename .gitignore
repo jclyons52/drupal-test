@@ -9,7 +9,7 @@
 
 # Ignore core when managing all of a project's dependencies with Composer
 # including Drupal core.
-# core
+core
 
 # Core's dependencies are managed with Composer.
 vendor
@@ -41,3 +41,13 @@ sites/simpletest
 # Ignore core phpcs.xml and phpunit.xml.
 core/phpcs.xml
 core/phpunit.xml
+
+.idea
+
+modules/*
+!modules/custom
+
+themes/*
+!themes/custom
+
+**/*.DS_Store
