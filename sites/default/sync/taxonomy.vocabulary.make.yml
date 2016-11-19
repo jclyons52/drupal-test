@@ -1,0 +1,9 @@
+uuid: 8b4520ff-e8cd-4f0c-8513-86a6fc5d1d69
+langcode: en
+status: true
+dependencies: {  }
+name: make
+vid: make
+description: 'list of car makers'
+hierarchy: 0
+weight: 0

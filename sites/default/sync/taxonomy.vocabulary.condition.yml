@@ -1,0 +1,9 @@
+uuid: 65cd3cce-fd2a-48cb-a6e9-a4fec30c67a3
+langcode: en
+status: true
+dependencies: {  }
+name: Condition
+vid: condition
+description: 'is the car new used or for parts'
+hierarchy: 0
+weight: 0

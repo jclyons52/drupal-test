@@ -1,0 +1,9 @@
+uuid: 9b45b85f-f471-4875-976f-d16f4872cb34
+langcode: en
+status: true
+dependencies: {  }
+name: 'Body type'
+vid: body_type
+description: 'type of car body'
+hierarchy: 0
+weight: 0

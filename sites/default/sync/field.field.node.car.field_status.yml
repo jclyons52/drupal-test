@@ -1,0 +1,28 @@
+uuid: 63a080d0-af1d-466a-b31d-5ed9b911ac20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_status
+    - node.type.car
+    - taxonomy.vocabulary.s
+id: node.car.field_status
+field_name: field_status
+entity_type: node
+bundle: car
+label: status
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      s: s
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

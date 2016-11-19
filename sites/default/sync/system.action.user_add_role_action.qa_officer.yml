@@ -1,0 +1,14 @@
+uuid: bdb6ea39-3353-43ea-abf5-b24e9a5c5ad7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.qa_officer
+  module:
+    - user
+id: user_add_role_action.qa_officer
+label: 'Add the QA officer role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: qa_officer

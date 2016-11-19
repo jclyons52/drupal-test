@@ -1,0 +1,9 @@
+uuid: d90cd632-4acf-4997-9605-e65d58f50d87
+langcode: en
+status: true
+dependencies: {  }
+name: Model
+vid: model
+description: 'car models'
+hierarchy: 0
+weight: 0

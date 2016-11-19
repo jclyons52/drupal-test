@@ -1,0 +1,9 @@
+uuid: b65ff75c-f8ac-4464-b7b8-8c4d3edf8024
+langcode: en
+status: true
+dependencies: {  }
+id: qa_officer
+label: 'QA officer'
+weight: 3
+is_admin: null
+permissions: {  }

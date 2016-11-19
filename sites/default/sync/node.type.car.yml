@@ -1,0 +1,18 @@
+uuid: 9873c1c0-c9fd-4dba-b79b-49790b2b3d56
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Car
+type: car
+description: 'set of information for a car'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

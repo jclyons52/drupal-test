@@ -1,0 +1,9 @@
+uuid: cae174fb-daee-4a83-90fc-bfad34bdb3a5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Make and Model'
+vid: make_and_model
+description: 'make and model of a vehicle'
+hierarchy: 0
+weight: 0

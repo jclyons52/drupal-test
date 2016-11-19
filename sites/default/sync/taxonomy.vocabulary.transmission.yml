@@ -1,0 +1,9 @@
+uuid: b9b9e950-4426-4059-bb33-c0f6c02bd36b
+langcode: en
+status: true
+dependencies: {  }
+name: Transmission
+vid: transmission
+description: 'transmission type of car (auto or manual)'
+hierarchy: 0
+weight: 0

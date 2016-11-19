@@ -739,6 +739,8 @@ $settings['file_scan_ignore_directories'] = [
   'bower_components',
 ];
 
+$config_directories['sync'] = 'sites/default/files/sync';
+
 /**
  * Load local development override configuration, if available.
  *
