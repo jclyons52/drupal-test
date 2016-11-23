@@ -1,0 +1,6 @@
+cars.newpage:
+  title: 'stuff to do with cars'
+  description: 'link to the page my module created'
+  route_name: cars.content
+  weight: 10
+  menu_name: main

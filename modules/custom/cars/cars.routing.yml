@@ -1,0 +1,14 @@
+cars.index:
+  path: 'cars'
+  defaults:
+    _controller: 'Drupal\cars\Controller\CarsController::index'
+    _title: 'test route on test module'
+  requirements:
+    _permission: 'access content'
+cars.content:
+  path: 'cars/content'
+  defaults:
+    _controller: 'Drupal\cars\Controller\CarsController::content'
+    _title: 'test route for content'
+  requirements:
+    _permission: 'access content'
