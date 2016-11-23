@@ -9,7 +9,10 @@
         "drupal/console": "~1.0",
         "drupal/rules": "3.x-dev",
         "drupal/devel": "1.x-dev",
-        "drupal/workbench": "1.x-dev"
+        "drupal/workbench": "1.x-dev",
+        "drupal/shs": "1.x-dev",
+        "drupal/pathauto": "1.x-dev",
+        "drupal/admin_toolbar": "^1.17"
     },
     "replace": {
         "drupal/core": "~8.2"

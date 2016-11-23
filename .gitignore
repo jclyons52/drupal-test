@@ -51,3 +51,5 @@ themes/*
 !themes/custom
 
 **/*.DS_Store
+
+console
