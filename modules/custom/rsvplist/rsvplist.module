@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains rsvp_list.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function rsvplist_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the rsvp_list module.
+    case 'help.page.rsvplist':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Allows users to RSVP for events and provides a contact list for admins') . '</p>';
+      return $output;
+
+    default:
+  }
+}
