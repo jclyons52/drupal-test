@@ -22,3 +22,37 @@ function rsvplist_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+function rsvplist_form_node_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+  $node = $form_state->getFormObject()->getEntity();
+  $current_node_type = $node->getType();
+  $config = \Drupal::config('rsvplist.settings');
+  $types = $config->get('allowed_types', []);
+
+  if (in_array($current_node_type, $types)) {
+    $form['rsvplist'] = [
+      '#type' => 'details',
+      '#title' => t('RSVP Collection'),
+      '#access' => \Drupal::currentUser()->hasPermission('administer rsvplist'),
+      '#group' => 'advanced',
+      '#weight' => 100,
+    ];
+
+    $enabler = \Drupal::service('rsvplist.enabler');
+
+    $form['rsvplist']['rsvplist_enabled'] = [
+      '#type' => 'checkbox',
+      '#title' => t('Collect RSVP e-mail address for this node'),
+      '#default_value' => $enabler->isEnabled($node)
+    ];
+
+    foreach (array_keys($form['actions']) as $action) {
+      if ($action != 'preview'
+          && isset($form['actions'][$action]['#type']
+          && $form['actions'][$action]['#type'] === 'submit')) {
+        $form['actions'][$action]['#submit'][] = 'rsvplist_form_node_form_submit';
+      }
+    }
+  }
+}
