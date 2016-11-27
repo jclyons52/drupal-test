@@ -739,7 +739,7 @@ $settings['file_scan_ignore_directories'] = [
   'bower_components',
 ];
 
-$config_directories['sync'] = 'sites/default/files/sync';
+$config_directories['sync'] = 'sites/default/sync';
 
 /**
  * Load local development override configuration, if available.
@@ -751,6 +751,6 @@ $config_directories['sync'] = 'sites/default/files/sync';
  *
  * Keep this code block at the end of this file to take full effect.
  */
-# if (file_exists(__DIR__ . '/settings.local.php')) {
-#   include __DIR__ . '/settings.local.php';
-# }
+ if (file_exists(__DIR__ . '/settings.local.php')) {
+   include __DIR__ . '/settings.local.php';
+ }
