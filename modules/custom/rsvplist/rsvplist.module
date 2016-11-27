@@ -56,3 +56,14 @@ function rsvplist_form_node_form_alter(&$form, \Drupal\Core\Form\FormStateInterf
     }
   }
 }
+
+function rsvplist_form_node_form_submit(array $form, \Drupal\Core\Form\FormStateInterface $form_state)
+{
+  $enabler = \Drupal::service('rsvplist.enabler');
+  $node = $form_state->getFormObject()->getEntity();
+  if ($enabled = $form_state->getValue('rsvplist_enabled')) {
+    $enabler->setEnabled($node);
+  } else {
+    $enabler->delEnabled($node);
+  }
+}
