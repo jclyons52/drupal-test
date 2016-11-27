@@ -49,8 +49,8 @@ function rsvplist_form_node_form_alter(&$form, \Drupal\Core\Form\FormStateInterf
 
     foreach (array_keys($form['actions']) as $action) {
       if ($action != 'preview'
-          && isset($form['actions'][$action]['#type']
-          && $form['actions'][$action]['#type'] === 'submit')) {
+          && isset($form['actions'][$action]['#type'])
+          && $form['actions'][$action]['#type'] === 'submit') {
         $form['actions'][$action]['#submit'][] = 'rsvplist_form_node_form_submit';
       }
     }
